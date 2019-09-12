@@ -6,16 +6,19 @@ REM ============== Variables ==============
 @SET GCC=g++
 @SET EXE_NAME=Game.exe
 @SET GAME_BUILD_DIR=Build
-@SET ENGINE_INCLUDE_PATH=..\Engine\Src
+@SET ENGINE_INCLUDE_PATH=..\Engine\Core\Include
 @SET EXTERNAL_INCLUDE_PATH=..\External
 @SET SOURCE=^
-Src\main.cpp
+Src\Core\src\main.cpp ^
+Src\Core\src\Game.cpp ^
+Src\Core\src\GameCfg.cpp 
 SET CFLAGS=^
 -std=c++14 ^
 -w 
 SET LFLAGS=^
--ISrc ^
--I%ENGINE_INCLUDE_PATH% ^
+-ISrc\Core\Include ^
+-I..\Engine\Engine\Core\Include ^
+-I..\Engine\Engine\Managers\Include ^
 -I%EXTERNAL_INCLUDE_PATH% ^
 -LLibs ^
 -lEngineLib

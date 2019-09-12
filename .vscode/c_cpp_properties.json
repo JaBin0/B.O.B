@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Engine/Engine/Core/Include",
+                "${workspaceFolder}/Engine/Engine/Manager/Include",
+                "${workspaceFolder}/Game/Src/Core/include",
+                "C:/MinGW/include",
+                "C:/MinGW/lib/gcc/mingw32/8.2.0/include/c++"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/MinGW/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${workspaceFolder}/Engine/Engine/Core/Include",
+                    "${workspaceFolder}/Engine/Engine/Manager/Include",
+                    "${workspaceFolder}/Game/Src/Core/include",
+                    "C:/MinGW/include",
+                    "C:/MinGW/lib/gcc/mingw32/8.2.0/include/c++"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

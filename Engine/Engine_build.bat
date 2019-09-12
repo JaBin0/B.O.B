@@ -6,14 +6,16 @@ REM ============== Variables ==============
 @SET GCC=g++
 @SET LIB_NAME=EngineLib.dll
 @SET SOURCE=^
-Src\Engine.cpp
+Engine\Core\Src\Engine.cpp ^
+Engine\Managers\Src\ResourceMgr.cpp
 @SET CFLAGS=^
 -std=c++14 ^
 -w ^
 -shared ^
 -fPIC
 @SET LFLAGS=^
--Isrc
+-IEngine\Core\Include ^
+-IEngine\Managers\Include
 
 REM ============ Build secion ============
 @echo on
