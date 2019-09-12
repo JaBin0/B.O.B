@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/Engine/Engine/Core/Include",
-                "${workspaceFolder}/Engine/Engine/Manager/Include",
+                "${workspaceFolder}/Engine/Engine/Managers/Include",
                 "${workspaceFolder}/Game/Src/Core/include",
                 "C:/MinGW/include",
                 "C:/MinGW/lib/gcc/mingw32/8.2.0/include/c++"
@@ -23,7 +23,7 @@
                 "path": [
                     "${workspaceFolder}/**",
                     "${workspaceFolder}/Engine/Engine/Core/Include",
-                    "${workspaceFolder}/Engine/Engine/Manager/Include",
+                    "${workspaceFolder}/Engine/Engine/Managers/Include",
                     "${workspaceFolder}/Game/Src/Core/include",
                     "C:/MinGW/include",
                     "C:/MinGW/lib/gcc/mingw32/8.2.0/include/c++"

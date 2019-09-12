@@ -17,8 +17,9 @@ SET CFLAGS=^
 -w 
 SET LFLAGS=^
 -ISrc\Core\Include ^
--I..\Engine\Engine\Core\Include ^
--I..\Engine\Engine\Managers\Include ^
+-I..\Engine\Engine\Core ^
+-I..\Engine\Engine\Managers ^
+-I..\Engine\Engine\Assets ^
 -I%EXTERNAL_INCLUDE_PATH% ^
 -LLibs ^
 -lEngineLib
