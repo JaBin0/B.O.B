@@ -7,7 +7,7 @@
 #include <ResourceMgr.h>
 
 Game::Game() {
-    std::cout << "Game B.o.B - v0.001.2a"<<std::endl;
+    std::cout << "Game B.o.B - v0.001.3a"<<std::endl;
     init();
 }
 
