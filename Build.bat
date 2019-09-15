@@ -41,7 +41,9 @@ if NOT %ERROR_CODE%==0 (
 @echo === BUILD SUCCESS
 @echo === RUN ===
 @echo.
-@call %GAME_DIR%\%GAME_BUILD_DIR%\%EXE_NAME%
+@call cd %GAME_DIR%\%GAME_BUILD_DIR%
+@call %EXE_NAME%
+@call cd ../..
 @echo. 
 @echo === END ===
 
