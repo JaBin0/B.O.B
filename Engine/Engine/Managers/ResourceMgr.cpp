@@ -43,6 +43,7 @@ XmlNode* ResourceMgr::parseXml(std::string fileName) {
     uint8_t namePos =  fileName.find_last_of('/') + 1;
     std::string name = fileName.substr(namePos, fileName.length() - namePos);
     XmlNode* root = new XmlNode(name);
+    XmlNode* activeNode = root;
     std::string line;
 
     while(!file.eof()) {
@@ -52,10 +53,19 @@ XmlNode* ResourceMgr::parseXml(std::string fileName) {
         }
 
         std::string content;
+        auto beginIndex = 0;
+        auto endIndex = 0;
+
         for(auto c=line.begin(); c != line.end(); ++c) {
             switch(*c) {
                 case '<':
-                    std::cout << "Start of the Tag: " << (*(++c)) << std::endl;
+                    // Meta tag, should be ommited
+                    if('?' == *(c+1)) { continue; }
+
+                    // Process new tag
+                break;
+                case '>':
+
                 break;
                 default:
                     content+=*c;
@@ -63,8 +73,8 @@ XmlNode* ResourceMgr::parseXml(std::string fileName) {
             }
         }
 
-        line.erase(0, line.find_first_not_of(' '));
-        std::cout << line.data() << std::endl;
+        // line.erase(0, line.find_first_not_of(' '));
+        // std::cout << line.data() << std::endl;
 
     }
 }

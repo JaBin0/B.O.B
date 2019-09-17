@@ -14,15 +14,18 @@ Src\Core\src\Game.cpp ^
 Src\Core\src\GameCfg.cpp 
 SET CFLAGS=^
 -std=c++14 ^
--w 
-SET LFLAGS=^
+-w ^
 -ISrc\Core\Include ^
 -I..\Engine\Engine\Core ^
 -I..\Engine\Engine\Managers ^
 -I..\Engine\Engine\Assets ^
 -I%EXTERNAL_INCLUDE_PATH% ^
--LLibs ^
--lEngineLib
+-LLibs 
+
+SET LFLAGS=^
+-lopengl32 ^
+-lglfw3dll ^
+-lEngineLib 
 
 REM ========== Pre build secion ==========
 @call mkdir %GAME_BUILD_DIR%

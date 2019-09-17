@@ -13,11 +13,14 @@ Engine\Assets\XmlNode.cpp
 -std=c++14 ^
 -w ^
 -shared ^
--fPIC
-@SET LFLAGS=^
+-fPIC ^
 -IEngine\Core ^
 -IEngine\Managers ^
--IEngine\Assets
+-IEngine\Assets ^
+-LLibs
+
+@SET LFLAGS=^
+-lglfw3dll ^
 
 REM ============ Build secion ============
 @echo on

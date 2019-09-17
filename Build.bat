@@ -25,6 +25,7 @@ if NOT %ERROR_CODE%==0 (
 
 REM COPY Libs
 xcopy /Y %ENGINE_DIR%\Build %GAME_DIR%\Libs
+xcopy /Y %ENGINE_DIR%\Libs %GAME_DIR%\Libs
 
 call cd %GAME_DIR%
 call %GAME_BUILD%

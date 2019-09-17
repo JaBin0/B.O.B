@@ -17,8 +17,11 @@ Game::~Game() {
 
 void Game::init() {
     m_engine = new Engine(1024,800);
-    ResourceMgr& resourceMgr = m_engine->getResourceMgr();
-    resourceMgr.loadLevel(GameCfg::LevelMap);
+    m_engine->startEngineRutine();
+
+
+    // ResourceMgr& resourceMgr = m_engine->getResourceMgr();
+    // resourceMgr.loadLevel(GameCfg::LevelMap);
 }
 
 void Game::run() {
